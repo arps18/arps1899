@@ -1,8 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
 body{
     font-size: 14px;
     columns: #333;
     background-color: #fff;
     letter-spacing: 1px;
+    text-align: center;
+    
+
 }
 
 .overlay{
@@ -41,6 +54,7 @@ body{
     z-index: 5;
     text-align: center;
     margin-top: -125px;
+    
 }
 
 .titleMessage .heading p{
@@ -57,9 +71,23 @@ body{
 .titleMessage .heading .sub{
     font-size: 23px;
 }
+.button{
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+    border: solid 1px rgb(70, 71, 71);
+    width: 150px;
+    height: 40px;
+    color: #000;
+    opacity: 0.8;
+    border-radius: 80px;
+    font-weight: 650;
+}
 
 .section{
     padding: 100px 0 100px 0;
+    
+    
 
 }
 
@@ -67,44 +95,161 @@ body{
     max-width: 75%;
 }
 
-.skillSection{
-    background-color: #A9C9FF;
-    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+
+
+.inner{
+    padding-top: 20px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+}
+
+.header{
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    position: relative;
+ 
+
+
+}
+
+.header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
     
 
 }
 
-.skill{
+.container{
+   
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-left: 10px;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    
+    
+   
+}
+.skill-box{
+    padding: 3rem;
+    color: black;
+    cursor: pointer;
+
 
 }
-.chart{
+
+.skill-box:hover >.skill-title:after, .skill-box:hover > .skill-title:before{
+    width: 35px;
+}
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
     position: relative;
-    width: 152px;
-    height: 152px;
-    display: inline-block;
-
-    text-align: center;
-
+    
 }
 
-.chart canvas{
+.skill-title:after{
+    content: '';
     position: absolute;
-    left: 0;
+    bottom: 0;
+    right: 50%;
+    
+    height: 4px;
+    width: 35;
+    background-color: #2ecc71;
+    border-radius: 2px 0 0 2px;
+    transition: .5s;
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    
+    height: 4px;
+    width: 0;
+    background-color: #2ecc71;
+    border-radius:0 2px 2px 0 ;
+    transition: .5s;
+}
+
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.img:after{
+    content: '';
+    position: absolute;
     top: 0;
+    left: 0;
+    
+    height: 90px;
+    width: 50%;
+    background: white;
+    border-radius: 45px 0 0 45px;
+}
+ 
+.skill-title h3{
+    color: black;
+    margin-top: 0.5rem;
+
 }
 
-.chart .percent{
-    color: #000;
-    line-height: 152px;
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
+.owl-dots{
+    text-align: center;
+   
+}
+.owl-dot{
     display: inline-block;
-    font-size: 35px;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 50px 5px 0;
+    margin-top: -50px;
 }
 
-.chart .percent:after{
-    content: '%'; 
+
+
+
+@media screen and (max-width:990px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 50px;     
+    }
 }
+
+
 
 .squareItem{
     margin-top: 30px;
@@ -112,7 +257,7 @@ body{
 }
 .squareInnerContainer{
     position: relative;
-    padding: 50px 15px 35px;
+    padding: 60px 30px 20px;
     text-align: center;
     border: 2px solid #444;
     border-top: none;
@@ -218,4 +363,8 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     width: 100%;
     height: 100%;
     background: url(../images/731.gif) center center no-repeat;
+}
+#particles-js{
+    
+  height: 150px ;
 }

@@ -19,7 +19,10 @@ $(document).ready(function () {
         startDelay: 1000,
         showCursor: false
     });
-
+    
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
     $('.owl-carousel').owlCarousel({
         loop: true,
         items: 5,
@@ -41,29 +44,17 @@ $(document).ready(function () {
             }
         }
     });
+    
+    
 
 
-    var skillsTopOffset = $(".skillSection").offset().top;
+    //var skillsTopOffset = $(".skillSection").offset().top;
     var statsTopOffset = $(".statsSection").offset().top;
     var countupFinished = false;
     $(window).scroll(function () {
 
 
-        if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
-
-            $('.chart').easyPieChart({
-                easing: "easeInOut",
-                barColor: "#fff",
-                trackColor: false,
-                scaleColor: false,
-                lineWidth: 4,
-                size: 152,
-                onStep: function (from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-
-        }
+       
         if (!countupFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
 
             $(".counter").each(function () {
@@ -85,7 +76,7 @@ $(document).ready(function () {
 
         });
 
-    const nav = $("#navigation ");
+    const nav = $("#navigation");
     const navTop = nav.offset().top;
     $(window).on("scroll", stickyNavigation);
     function stickyNavigation() {

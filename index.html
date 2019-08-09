@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" type="text/css" href="css/superslides.css">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
@@ -20,6 +22,7 @@
     </head>
 
     <body>
+
         <div class="loader">
             <div class="inner"></div>
 
@@ -68,7 +71,7 @@
                         <a class="nav-link" href="#stats">Statistics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Resume</a>
+                        <a class="nav-link " href="#resume">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -83,7 +86,7 @@
                     <div class="col-md-5">
                         <img class="aboutImage" src="images/one.jpg" alt="">
                     </div>
-                    <div class="col-md-7">
+                    <div id="pa" class="col-md-7">
                         <h4>The Pitch</h4>
                         <p>My name is Arpan Patel and I am a full-stack Web Application Developer and Software
                             Developer, currently living in Vadodara, Gujarat. I have a Bachelor of Science in
@@ -95,12 +98,119 @@
                             experimenting with new technologies and techniques. I am very passionate about Web
                             Development, and strive to better myself as a developer, and the development community as a
                             whole.</p>
+                        <a
+                            href="https://docs.google.com/document/d/1RYwUa0viXVC6djTTYPRmpEMN7JM56a6_JL7Gxw7GrDQ/edit?usp=sharing" download>
+                            <button id="resume" class="button" > Download Resume </button> </a>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div id="skills" class="skillSection section">
+        <div class="inner">
+            <div id="particles-js" class="header">
+                <div class="col-md-12 text-center">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <p>A represenation of my proficency in each skill.</p>
+                </div>
+            </div>
+            <div id="skills" class="containers">
+                <div class="carousel owl-carousel owl-theme" data-indicators="true">
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/html-5.png" class="skill-icon">
+                            </div>
+                            <h3>HTML 5</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/css3.png" class="skill-icon">
+                            </div>
+                            <h3>CSS 3</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/c-plus-plus-logo.png" class="skill-icon">
+                            </div>
+                            <h3>C++</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/python.png" class="skill-icon">
+                            </div>
+                            <h3>Python</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/c-programming.png" class="skill-icon">
+                            </div>
+                            <h3>C</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/bootstrap.png" class="skill-icon">
+                            </div>
+                            <h3>Bootstrap</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/java-coffee-cup-logo.png" class="skill-icon">
+                            </div>
+                            <h3>Java</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/github.png" class="skill-icon">
+                            </div>
+                            <h3>Github</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/git.png" class="skill-icon">
+                            </div>
+                            <h3>Git</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-title">
+                            <div class="img">
+                                <img src="images/flut.png" class="skill-icon">
+                            </div>
+                            <h3>Flutter</h3>
+                        </div>
+                        <p>abc</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--  <div id="skills" class="skillSection section">
             <div class="container">
 
 
@@ -151,7 +261,7 @@
                             <p>Used in structured Programming </p>
                         </div>
                     </div>
-                    <!-- <div class="skill">
+                     <div class="skill">
                             <span class="chart" data-percent="55">
                                 <span class="percent">
                                     55
@@ -160,78 +270,81 @@
                             </span>
                             <h4>Java</h4>
                             <p>Used in Object oriented programming </p>
+                        
                         </div>-->
-                </div>
-            </div>
+        </div>
+        </div>
         </div>
         <div id="stats" class="statsSection section">
             <div class="container">
+                <div>
 
 
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="fas fa-code-branch"></i>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="squareItem">
+                                <div class="squareInnerContainer">
+                                    <div class="squareIcon">
+                                        <i class="fas fa-code-branch"></i>
+                                    </div>
+                                    <div class="squareContent">
+                                        <h2 class="counter">61</h2>
+                                        <h3>Contributions</h3>
+
+                                    </div>
                                 </div>
-                                <div class="squareContent">
-                                    <h2 class="counter">61</h2>
-                                    <h3>Contributions</h3>
 
-                                </div>
                             </div>
 
                         </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="squareItem">
+                                <div class="squareInnerContainer">
+                                    <div class="squareIcon">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div class="squareContent">
+                                        <h2 class="counter">5</h2>
+                                        <h3>Projects</h3>
 
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="fas fa-project-diagram"></i>
+                                    </div>
                                 </div>
-                                <div class="squareContent">
-                                    <h2 class="counter">5</h2>
-                                    <h3>Projects</h3>
 
-                                </div>
                             </div>
 
                         </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="squareItem">
+                                <div class="squareInnerContainer">
+                                    <div class="squareIcon">
+                                        <i class="far fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="squareContent">
+                                        <h2 class="counter">7</h2>
+                                        <h3>Events</h3>
 
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="far fa-calendar-alt"></i>
+                                    </div>
                                 </div>
-                                <div class="squareContent">
-                                    <h2 class="counter">7</h2>
-                                    <h3>Events</h3>
 
-                                </div>
                             </div>
 
                         </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="squareItem">
+                                <div class="squareInnerContainer">
+                                    <div class="squareIcon">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <div class="squareContent">
+                                        <h2 class="counter">3</h2>
+                                        <h3>Talks</h3>
 
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="fas fa-tasks"></i>
+                                    </div>
                                 </div>
-                                <div class="squareContent">
-                                    <h2 class="counter">3</h2>
-                                    <h3>Talks</h3>
 
-                                </div>
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -244,6 +357,8 @@
 
             </div>
         </div>
+        <script type="text/javascript" src="js/particles.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
         <script src="js/countUp.js"></script>
         <script src="js/countUp-jquery.js"></script>
         <script src="js/jquery.superslides.min.js"></script>
